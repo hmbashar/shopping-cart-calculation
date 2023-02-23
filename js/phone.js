@@ -1,4 +1,4 @@
-function updateCaseNumber (isIncrease) {
+function updatePhoneNumber (isIncrease) {
     const phoneNumberField = document.getElementById('phone-number-field');
     const phoneNumberString = phoneNumberField.value;
     const previousPhoneNumber = parseInt(phoneNumberString);
@@ -18,7 +18,7 @@ function updateCaseNumber (isIncrease) {
 }
 
 //Price Update
-function updateCaseTotalPrice(newPhoneNumber) {
+function updatePhoneTotalPrice(newPhoneNumber) {
     
     const phoneTotalPrice = newPhoneNumber * 1219 ;
 
@@ -30,16 +30,16 @@ function updateCaseTotalPrice(newPhoneNumber) {
 
 
 document.getElementById('btn-phone-plus').addEventListener('click', function() {
-    const totalPhonePrice = updateCaseNumber(true);
+    const totalPhonePrice = updatePhoneNumber(true);
 
-    updateCaseTotalPrice(totalPhonePrice);
+    updatePhoneTotalPrice(totalPhonePrice);
 
 });
 
 
 document.getElementById('btn-phone-minus').addEventListener('click', function() {
-    const totalPhonePrice = updateCaseNumber(false);
-    
-    updateCaseTotalPrice(totalPhonePrice);
+    const totalPhonePrice = updatePhoneNumber(false);
+
+    updatePhoneTotalPrice(totalPhonePrice);
 
 });
