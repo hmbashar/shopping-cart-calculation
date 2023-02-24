@@ -33,6 +33,10 @@ document.getElementById('btn-phone-plus').addEventListener('click', function() {
     const totalPhonePrice = updatePhoneNumber(true);
 
     updatePhoneTotalPrice(totalPhonePrice);
+    
+    //calculate sub total
+    calculateSubTotal();
+
 
 });
 
@@ -41,5 +45,6 @@ document.getElementById('btn-phone-minus').addEventListener('click', function() 
     const totalPhonePrice = updatePhoneNumber(false);
 
     updatePhoneTotalPrice(totalPhonePrice);
-
+    //calculate sub total
+    calculateSubTotal();
 });
